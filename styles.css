@@ -12,10 +12,34 @@
     border-radius:100%;
     background-color: rgb(80, 164, 212);
     box-shadow: 0 0 40px rgb(105, 105, 105);
-
+    animation: hoverOut 1s 1 forwards;
 }
 
 #start-animation:hover {
-    transform: scale (1., 1.2);
-    background-color: rgb(223, 108, 73);
+    animation: hoverIn 1s 1 forwards;
 }
+@keyframes hoverIn {
+    0%   {
+      transform: scale(1, 1);
+      background-color: rgb(80, 164, 212);
+      box-shadow: 0 0 40px rgb(105, 105, 105);
+    }
+    100% {
+      transform: scale(1.2, 1.2);
+      background-color: rgb(223, 108, 73);
+      box-shadow: 0 0 10px rgb(105, 105, 105);
+    }
+  }
+  
+  @keyframes hoverOut {
+    0%   {
+      transform: scale(1.2, 1.2);
+      background-color: rgb(223, 108, 73);
+      box-shadow: 0 0 10px rgb(105, 105, 105);
+    }
+    100% {
+      transform: scale(1, 1);
+      background-color: rgb(80, 164, 212);
+      box-shadow: 0 0 40px rgb(105, 105, 105);
+    }
+  }
