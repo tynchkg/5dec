@@ -7,18 +7,19 @@
     color: white;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:bold;
-    line-height:150px;
-    border-radius:100%;
+    font-weight: bold;
+    line-height: 150px;
+    border-radius: 100%;
     background-color: rgb(80, 164, 212);
     box-shadow: 0 0 40px rgb(105, 105, 105);
-    animation: hoverOut 1s 1 forwards;
-}
-
-#start-animation:hover {
-    animation: hoverIn 1s 1 forwards;
-}
-@keyframes hoverIn {
+    animation: hoverOut 1s;
+  }
+  #start-animation:hover {
+    background-color: rgb(223, 108, 73);
+    animation: hoverIn 1s forwards;
+  }
+  
+  @keyframes hoverIn {
     0%   {
       transform: scale(1, 1);
       background-color: rgb(80, 164, 212);
