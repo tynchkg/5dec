@@ -1,0 +1,21 @@
+#start-animation {
+    margin: 200px auto 0;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    line-height:150px;
+    border-radius:100%;
+    background-color: rgb(80, 164, 212);
+    box-shadow: 0 0 40px rgb(105, 105, 105);
+
+}
+
+#start-animation:hover {
+    transform: scale (1., 1.2);
+    background-color: rgb(223, 108, 73);
+}
